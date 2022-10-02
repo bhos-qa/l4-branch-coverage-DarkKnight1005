@@ -49,8 +49,8 @@ public class AppTest {
         assertEquals("getting modified value from getter which is dcremented by 3 which must be -20", -20, classUnderTest.getSomeValue());
         assertEquals("getting modified value from method which is dcremented by -6 which must be -20", -14, classUnderTest.decrementSomeValue(-6));
         assertEquals("getting modified value from getter which is dcremented by -6 which must be -20", -14, classUnderTest.getSomeValue());
-        assertEquals("getting modified value from method which is dcremented by -19 which must be 3", 3, classUnderTest.decrementSomeValue(-19));
-        assertEquals("getting modified value from getter which is dcremented by -19 which must be 3", 3, classUnderTest.getSomeValue());
+        assertEquals("getting modified value from method which is dcremented by -19 which must be 5", 5, classUnderTest.decrementSomeValue(-19));
+        assertEquals("getting modified value from getter which is dcremented by -19 which must be 5", 5, classUnderTest.getSomeValue());
         classUnderTest.someValue = 1;
         assertEquals("getting modified value which must be 1", 1, classUnderTest.getSomeValue());
     }
