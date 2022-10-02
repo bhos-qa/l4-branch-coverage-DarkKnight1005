@@ -9,6 +9,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+    id "jacoco"
     id "org.sonarqube" version "3.4.0.2513"
 }
 
@@ -28,6 +29,12 @@ dependencies {
 application {
     // Define the main class for the application.
     mainClass = 'lab4.App'
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+    }
 }
 
 sonarqube {
