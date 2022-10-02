@@ -9,6 +9,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+    id "org.sonarqube" version "3.4.0.2513"
 }
 
 repositories {
@@ -27,4 +28,12 @@ dependencies {
 application {
     // Define the main class for the application.
     mainClass = 'lab4.App'
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "bhos-qa_l4-branch-coverage-DarkKnight1005"
+    property "sonar.organization", "bhos-qa"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
